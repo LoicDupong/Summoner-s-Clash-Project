@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #6f47866c;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3b2647a8;
+  }
+
+body{
+    background-color: rgb(28 18 34);
+}
+
+#body-champ{
+    background-image: url("img/champ-bg.jpg");
+}
+
+  
+  #menu-panel{
+   height: 80vh;
+  }
+  
+  
+  /* .champ-select-panel{
+    
+  } */
+  
+  video{
+    position: absolute;
+    top:0;
+    left: 0;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+  
+  }
+  
+  .main-container {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  #main-champ.main-container{
+    justify-content: unset;
+  }
+  
+  h1, h2, h3, h4 {
+    margin-bottom: 2rem;
+    color: whitesmoke;
+  }
+  
+  p{
+    color: whitesmoke;
+  }
+  
+  #navbar{
+    display: flex;
+    justify-content: center;
+  }
+
+  .input-name {
+    margin-bottom: 1.5rem;
+  }
+
+  .input-name input{
+    width: 55%;
+    text-align: center;
+    height: 40px;
+    border-radius: 8px;
+  }
+  
+button {
+    margin: 10px;
+    height: 40px;
+    width: 130px;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 2em;
+  }
+
+  
+  
+  
+  button:hover {
+    transition-duration: 0.1s;
+    background-color: #3b2647a8;
+    color: whitesmoke;
+  
+  }
+  
+.btn-container{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+  .header{
+    background-color: #1c12228a;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 2.5em black;
+    text-align: center;
+    width: 400px;
+    margin-bottom: 4rem;
+  }
+  
+  
+  .marge {
+    margin: 0 10px;
+  }
+  
+  .second-container .marge {
+    margin: 0 2%;
+  }
+  
+  .second-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 85%;
+  }
+  .champions-container{
+    display: flex;
+    flex-grow: 6;
+    padding: 2% 4%;
+    max-width: 650px;
+    background-color: #1c12228a;
+    box-shadow: 0 0 2.5em black;
+    overflow: auto;
+    max-height: 800px;
+  
+  }
+  
+  #searchbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  #searchbar input{
+    width: 80%;
+    text-align: center;
+    height: 35px;
+    border-radius: 8px;
+  }
+  
+  
+  .champion-tile {
+    background-color: #1c1222d5;
+  
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+  
+  
+  .infos-champion-container {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    background-color: #1c12228a;
+    box-shadow: 0 0 2.5em black;
+    flex-grow: 4;
+    max-width: 40%;
+    text-align: center;
+  }
+  
+  .loading-image img{
+    width: 250px;
+    height: 560px;
+  }
+  
+  .infos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .infos p {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  
+  #info-nbr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  } 
+
+  .stats{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  
+  .black-square{
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .spell {
+    display: flex;
+    flex-flow: wrap-reverse column-reverse;
+    height: 64px;
+  }
+  .black-square p {
+    color: #fff;
+  
+  }
+  
+  .name-container{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .name-container h2{
+    font-size: 3rem;
+  
+  }
+  .name-container h4{
+    font-size: 2rem;
+    color: rgb(148, 41, 41);
+    width: 85%;
+  }
+  
+  #class {
+    margin: 1rem 0 2rem 0;
+    font-size: larger;
+    font-weight: bolder;
+  }
+  
+  
+  #lore{
+    margin: 1rem 0 2rem 0;
+    padding: 0 2.5rem;
+  }
+  
+  #lore{
+    font-size: 1rem;
+    text-align: justify;
+  
+  }
+  
+  /* .lore-description-container {
+    width: 80%;
+    height: 110px;
+    border-radius: 0 20px 0px 20px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    text-align: left;
+  } */
+  
+  .upper-container {
+    display: flex;
+    
+  }
+  
+  .spells-container{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #spells-images-container {
+    margin-bottom: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .spells-description-container {
+    width: 80%;
+    border-radius: 0 20px 0px 20px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  #spell-name{
+    color: rgb(255 75 75)!important;
+  }
+
+  .active{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 5px solid gold;
+    border-style: groove;
+  }
+  
+
+
+  /* Summoner's Rift */
+  /* ////////////////////////// */
+
+.rift-bg{
+    background-image: url(img/rift-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-container-rift{
+    position: absolute;
+    background-color: #d8d8d88a;
+    margin: 5rem 3rem 3rem 3rem;
+    border-radius: 15px;
+    width: 80%;
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 2.5em black;
+
+  }
+
+  .top-bottom{
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+  }
+  .title-container{
+    display: flex;
+    justify-content: center;
+    margin-top: -2rem;
+  }
+
+  .title-container img{
+    width: 350px;
+    margin: 0 2rem;
+  }
+
+  #title-rift{
+    margin-top: -1.5rem;
+  }
+
+  #title-rift a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .user-champ-container, .AI-champ-container{
+    background-color: #151d1fcb;
+    border-radius: 15px;
+    width: 400px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 5px solid gold;
+    border-style: groove;
+
+  }
+
+  .vs{
+    position: absolute;
+  }
+
+  .healthBar{
+    width: 300px;
+    height: 45px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.158);
+  }
+
+  .healthBar > div {
+    height: 100%;
+    border-radius: 6px;
+    background-color: rgba(255, 0, 0, 0.89);
+    transition: width 200ms;
+  }
+
+  .champ-infos{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #rift-name h2, #rift-name-enemy h2{
+    margin-bottom: 0!important;
+  }
+  #rift-name, #rift-name-enemy{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .upper-container-rift{
+    margin: 1rem;
+  }
+
+  #champ-statut, #champ-statut-enemy{
+    display: flex;
+    flex-direction: row;
+  }
+
+  #tile-rift{
+    margin-left: 0;
+  }
+
+  .spells-btn{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  #lower-btn button{
+    width: 88%;
+  }
+
+  #upper-btn{
+    display: flex;
+    flex-direction: row;
+  }
+
+
+.console-user{
+  margin: 1rem;
+}
+
+.console-user textarea{
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.699);
+  resize: none;
+}
+
+.console-enemy{
+  margin: 1rem;
+
+}
+
+.console-enemy textarea{
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.699);
+  resize: none;
+}
+
+#quit, #leaderboard {
+  background-color: #151d1fc5;
+    color: whitesmoke;
+}
+
+#quit:hover, #leaderboard:hover {
+  background-color: #f2cd62;
+    color: #151d1f;
+}

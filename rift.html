@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summoner's Rift | League of Legend - Summoner's Clash</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" href="img/logo192.png" />
+    <link rel="manifest" href="img/site.webmanifest" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="rift-bg">
+    <div class="top-bottom">
+        <div class="title-container" id="title-rift">
+            <a href="index.html "><button id="quit">Quit</button></a>
+            <img src="img/logo.png" alt="" id="logo">
+            <a href="leaderboard.html"><button id="leaderboard">Leaderboard</button></a>
+        </div>
+    </div>
+    <div class="main-container-rift">
+        <div class="user-champ-container">
+            <div class="champ-infos">
+                <div class="upper-container-rift">
+                    <div id="champ-statut">
+                        <div class="champion-tile" id="tile-rift" style="background-image: url('img/champion/Aatrox.png');"></div>
+                        <div class="name-container" id="rift-name">
+                            <h2 id="name">Aatrox</h2>
+                        </div>
+                    </div>
+                    <div class="healthBar">
+                        <div style="width: 65%;"></div>
+                    </div>
+                </div>
+                
+            
+                <div class="spells-btn">
+                    <div id="upper-btn">
+                        <button>Attack 1</button>
+                        <button>Attack 2</button>
+                    </div>
+                    <div id="lower-btn">
+                        <button>Ultimate</button>
+                    </div>
+                </div>
+            </div>
+            <div class="console-user">
+                <textarea name="" id="" cols="50" rows="10" readonly ></textarea>
+            </div>
+        </div>
+        <div class="vs">
+            <img src="img/VS.png" alt="">
+        </div>
+        <div class="AI-champ-container">
+            <div class="champ-infos">
+                <div class="upper-container-rift">
+                    <div id="champ-statut-enemy">
+                        <div class="champion-tile" id="tile-rift-enemy" style="background-image: url('img/champion/Gragas.png');"></div>
+                        <div class="name-container" id="rift-name-enemy">
+                            <h2 id="name-enemy">Gragas</h2>
+                        </div>
+                    </div>
+                    <div class="healthBar">
+                        <div style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="console-enemy">
+                <textarea name="" id="" cols="50" rows="20" readonly ></textarea>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
