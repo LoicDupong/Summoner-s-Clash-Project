@@ -1,5 +1,5 @@
-const urlLoL = "https://ddragon.leagueoflegends.com/cdn/12.5.1/data/en_US/champion/__name__.json"
-const urlLolGeneral = "http://ddragon.leagueoflegends.com/cdn/12.5.1/data/en_US/champion.json"
+const urlLoL = "https://ddragon.leagueoflegends.com/cdn/15.7.1/data/en_US/champion/__name__.json"
+const urlLolGeneral = "http://ddragon.leagueoflegends.com/cdn/15.7.1/data/en_US/champion.json"
 
 const searchHTML = document.querySelector("#searchbar input")
 const searchBtnHTML = document.getElementById("search-btn")
